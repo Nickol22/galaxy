@@ -13,55 +13,49 @@
     <nav>
       <ul>
         <li><a href="#iphone">iPhone</a></li>
-        <li><a href="#watch">Apple Watch</a></li>
+        <li><a href="#watch">Watch</a></li>
         <li><a href="#mac">Mac</a></li>
         <li><a href="#airpods">AirPods</a></li>
         <li><a href="#accessories">Аксессуары</a></li>
       </ul>
     </nav>
-    <div class="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
   </header>
 
-  <!-- Новые iPhone -->
-  <section id="new-iphone">
+  <!-- Баннер -->
+  <section class="banner">
     <h2>Новые iPhone 17 Pro Max</h2>
-    <div class="products">
+    <div class="banner-products">
       <div class="card">
-        <img src="https://via.placeholder.com/200x250" alt="iPhone 17 Pro Max">
-        <h3>iPhone 17 Pro Max</h3>
-        <p>Цена: $1299</p>
-        <button onclick="addToCart('iPhone 17 Pro Max', 1299)">Купить</button>
+        <img src="https://via.placeholder.com/200x200" alt="iPhone 17 Pro Max">
+        <p>iPhone 17 Pro Max</p>
+        <button onclick="goToCheckout()">Купить</button>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/200x250" alt="iPhone 17 Pro Max">
-        <h3>iPhone 17 Pro Max</h3>
-        <p>Цена: $1299</p>
-        <button onclick="addToCart('iPhone 17 Pro Max', 1299)">Купить</button>
+        <img src="https://via.placeholder.com/200x200" alt="iPhone 17 Pro Max">
+        <p>iPhone 17 Pro Max</p>
+        <button onclick="goToCheckout()">Купить</button>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/200x250" alt="iPhone 17 Pro Max">
-        <h3>iPhone 17 Pro Max</h3>
-        <p>Цена: $1299</p>
-        <button onclick="addToCart('iPhone 17 Pro Max', 1299)">Купить</button>
+        <img src="https://via.placeholder.com/200x200" alt="iPhone 17 Pro Max">
+        <p>iPhone 17 Pro Max</p>
+        <button onclick="goToCheckout()">Купить</button>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/200x250" alt="iPhone 17 Pro Max">
-        <h3>iPhone 17 Pro Max</h3>
-        <p>Цена: $1299</p>
-        <button onclick="addToCart('iPhone 17 Pro Max', 1299)">Купить</button>
+        <img src="https://via.placeholder.com/200x200" alt="iPhone 17 Pro Max">
+        <p>iPhone 17 Pro Max</p>
+        <button onclick="goToCheckout()">Купить</button>
       </div>
     </div>
   </section>
 
-  <!-- Другие категории -->
+  <!-- Категории -->
   <section id="iphone">
     <h2>iPhone</h2>
     <div class="products">
       <div class="card">
-        <img src="https://via.placeholder.com/200x250" alt="iPhone 16 Pro">
-        <h3>iPhone 16 Pro</h3>
-        <p>Цена: $1099</p>
-        <button onclick="addToCart('iPhone 16 Pro', 1099)">Купить</button>
+        <img src="https://via.placeholder.com/200x200" alt="iPhone">
+        <p>iPhone 16 Pro</p>
+        <button onclick="goToCheckout()">Купить</button>
       </div>
     </div>
   </section>
@@ -70,10 +64,9 @@
     <h2>Apple Watch</h2>
     <div class="products">
       <div class="card">
-        <img src="https://via.placeholder.com/200x250" alt="Apple Watch">
-        <h3>Apple Watch</h3>
-        <p>Цена: $499</p>
-        <button onclick="addToCart('Apple Watch', 499)">Купить</button>
+        <img src="https://via.placeholder.com/200x200" alt="Watch">
+        <p>Apple Watch Series 10</p>
+        <button onclick="goToCheckout()">Купить</button>
       </div>
     </div>
   </section>
@@ -82,10 +75,9 @@
     <h2>Mac</h2>
     <div class="products">
       <div class="card">
-        <img src="https://via.placeholder.com/200x250" alt="MacBook">
-        <h3>MacBook Pro</h3>
-        <p>Цена: $1999</p>
-        <button onclick="addToCart('MacBook Pro', 1999)">Купить</button>
+        <img src="https://via.placeholder.com/200x200" alt="Mac">
+        <p>MacBook Pro 2025</p>
+        <button onclick="goToCheckout()">Купить</button>
       </div>
     </div>
   </section>
@@ -94,10 +86,9 @@
     <h2>AirPods</h2>
     <div class="products">
       <div class="card">
-        <img src="https://via.placeholder.com/200x250" alt="AirPods Pro">
-        <h3>AirPods Pro</h3>
-        <p>Цена: $299</p>
-        <button onclick="addToCart('AirPods Pro', 299)">Купить</button>
+        <img src="https://via.placeholder.com/200x200" alt="AirPods">
+        <p>AirPods Pro 3</p>
+        <button onclick="goToCheckout()">Купить</button>
       </div>
     </div>
   </section>
@@ -106,26 +97,16 @@
     <h2>Аксессуары</h2>
     <div class="products">
       <div class="card">
-        <img src="https://via.placeholder.com/200x250" alt="Чехол">
-        <h3>Чехол</h3>
-        <p>Цена: $49</p>
-        <button onclick="addToCart('Чехол', 49)">Купить</button>
+        <img src="https://via.placeholder.com/200x200" alt="Accessory">
+        <p>MagSafe Charger</p>
+        <button onclick="goToCheckout()">Купить</button>
       </div>
     </div>
   </section>
 
-  <!-- Корзина -->
-  <div id="cart" class="cart hidden">
-    <h2>Корзина</h2>
-    <ul id="cart-items"></ul>
-    <p id="cart-total">Итого: $0</p>
-    <button onclick="checkout()">Оплатить</button>
-    <button onclick="toggleCart()">Закрыть</button>
-  </div>
-
-  <!-- Подвал -->
+  <!-- Футер -->
   <footer>
-    <p>© 2025 SmartStore. Все права защищены.</p>
+    <p>2025 SmartStore. Все права защищены.</p>
   </footer>
 
   <script src="script.js"></script>
