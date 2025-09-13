@@ -1,139 +1,133 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="ru">
 <head>
-    <meta charset='UTF-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Galaxy</title>
-    <script src='https://kit.fontawesome.com/f77600b8df.js' crossorigin='anonymous'></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartStore</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Шапка -->
+  <header>
+    <h1>SmartStore</h1>
     <nav>
-        <div class='nav-item' onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Проєкт</div>
-        <div class='nav-item' onclick="document.getElementById('team').scrollIntoView({behavior: 'smooth'});">Команда</div>
-        <div class='nav-item' onclick="document.getElementById('merch').scrollIntoView({behavior: 'smooth'});">Мерч</div>
-        <div class='nav-item' onclick="document.getElementById('submit').scrollIntoView({behavior: 'smooth'});">Заявка</div>
-        <div class='nav-item'><span class='cart-text'>Кошик</span> <span class='cart-amount'>0</span></div>
-        <div class='nav-item switch-theme-button'>Змінити тему</div>
+      <ul>
+        <li><a href="#iphone">iPhone</a></li>
+        <li><a href="#watch">Apple Watch</a></li>
+        <li><a href="#mac">Mac</a></li>
+        <li><a href="#airpods">AirPods</a></li>
+        <li><a href="#accessories">Аксессуары</a></li>
+      </ul>
     </nav>
-    <header>
-        <h1>Летимо на <span class='mars mars1'>Марс</span></h1>
-        <div class='arrow-next'><i class='fa-solid fa-arrow-down'></i></div>
-    </header>
-    <main>
-        <section class='section1' id='about'>
-            <h1>Про проєкт</h1>
-            <div class='about-wrapper'>
-                <p>За часів активного освоєння космосу, польоти на Місяць стали доступні багатим людям з розвинених країн. Відтоді минуло кілька сотень років, за які розвиток технологій зробив новий виток. Зараз польотами на Місяць <i>нікого не здивувати</i>.</p>
-                <p>Якщо ви хочете випробувати нові відчуття, вийти за рамки і привнести у своє життя щось кардинально нове - у вас є всі шанси стати одним із перших щасливчиків, які підкорили глибини космосу. Уперше в історії людства ми робимо доступними польоти на <span class='mars mars2'><b>Марс</b></span>.</p>
-                <p>Досі Червоного Гіганта підкорювали лише вчені та дослідники. Знадобилися сотні років і не одна технічна революція, щоб <span class='mars mars3'>Марс</span> став придатним для колоніального життя і приватних візитів. Проєкт Galaxy першим отримав унікальне право організації приватних рейсів на <span class='mars mars4'>Марс</span>.</p>
-                <p>Ласкаво просимо в <b>новий світ</b>.</p>
-            </div>
-        </section>
-        <section class='section2' id='team'>
-            <h1>Команда</h1>
-            <div class='team-wrapper'>
-                <div class='team-item team1'>
-                    <div class='team-item-top'></div>
-                    <div class='team-item-bottom'>
-                        <h2>Джамал</h2>
-                        <p>Капітан корабля. За плечима десятки польотів і згуртована команда.</p>
-                    </div>
-                </div>
-                <div class='team-item team2'>
-                    <div class='team-item-top'></div>
-                    <div class='team-item-bottom'>
-                        <h2>Артем</h2>
-                        <p>Перший пілот. Підніме і приземлить будь-який корабель.</p>
-                    </div>
-                </div>
-                <div class='team-item team3'>
-                    <div class='team-item-top'></div>
-                    <div class='team-item-bottom'>
-                        <h2>Данило</h2>
-                        <p>Другий пілот.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class='section4' id='merch'>
-            <h1>Мерч</h1>
-            <div class='merch-wrapper'>
-                <div class='merch-item merch1'>
-                    <div class='merch-item-top'></div>
-                    <div class='merch-item-bottom'>
-                        <h2 class='merch-item-name'>[назва]</h2>
-                        <p class='merch-item-descr'>[опис]</p>
-                        <div class='add-to-cart-group'>
-                            <div class='add-to-cart-btn'><i class='fa-solid fa-cart-shopping'></i></div>&nbsp;- <span class='merch-item-price'>[ціна]</span>грн.
-                        </div>
-                    </div>
-                </div>
-                <div class='merch-item merch2'>
-                    <div class='merch-item-top'></div>
-                    <div class='merch-item-bottom'>
-                        <h2 class='merch-item-name'>[назва]</h2>
-                        <p class='merch-item-descr'>[опис]</p>
-                        <div class='add-to-cart-group'>
-                            <div class='add-to-cart-btn'><i class='fa-solid fa-cart-shopping'></i></div>&nbsp;- <span class='merch-item-price'>[ціна]</span>грн.
-                        </div>
-                    </div>
-                </div>
-                <div class='merch-item merch3'>
-                    <div class='merch-item-top'></div>
-                    <div class='merch-item-bottom'>
-                        <h2 class='merch-item-name'>[назва]</h2>
-                        <p class='merch-item-descr'>[опис]</p>
-                        <div class='add-to-cart-group'>
-                            <div class='add-to-cart-btn'><i class='fa-solid fa-cart-shopping'></i></div>&nbsp;- <span class='merch-item-price'>[ціна]</span>грн.
-                        </div>
-                    </div>
-                </div>
-                <div class='merch-item merch4'>
-                    <div class='merch-item-top'></div>
-                    <div class='merch-item-bottom'>
-                        <h2 class='merch-item-name'>[назва]</h2>
-                        <p class='merch-item-descr'>[опис]</p>
-                        <div class='add-to-cart-group'>
-                            <div class='add-to-cart-btn'><i class='fa-solid fa-cart-shopping'></i></div>&nbsp;- <span class='merch-item-price'>[ціна]</span>грн.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class='section3' id='submit'>
-            <div class='submit-wrapper'>
-                <h1>Заявка</h1>
-                <div class='submit-form'>
-                    <input class='submit-input' type='text' placeholder="ім'я">
-                    <p class='submit-input-label'>ім'я</p>
-                    <input class='submit-input' type='email' placeholder='e-mail'>
-                    <p class='submit-input-label'>e-mail</p>
-                    <input class='submit-input' type='text' placeholder='телефон'>
-                    <p class='submit-input-label'>номер телефону</p>
-                    <div class='submit-input-row'>
-                        <div class='group'>
-                            <input class='submit-input row-item days-input' type='number' placeholder='дні'>
-                            <p class='submit-input-label'>днів на <span class='mars mars5'>Марсі</span></p>
-                        </div>  
-                        <div class='group'>
-                            <select class='submit-select row-item' placeholder='каюта'>
-                                <option value='1000' selected='selected'>Базовий</option>
-                                <option value='2000'>Преміум</option>
-                                <option value='3000'>Люкс</option>
-                            </select>
-                            <p class='submit-input-label'>клас каюти</p>
-                        </div>  
-                    </div>
-                </div>
-                <div class='submit-btn-row'>
-                    <div class='submit-btn submit-btn-calc'>Вартість</div>
-                    <div class='submit-btn submit-btn-send'>Відправити</div>
-                </div>
-            </div>
-        </section>
-    </main>
-  <script src="script.js">
+    <div class="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
+  </header>
+
+  <!-- Новые iPhone -->
+  <section id="new-iphone">
+    <h2>Новые iPhone 17 Pro Max</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x250" alt="iPhone 17 Pro Max">
+        <h3>iPhone 17 Pro Max</h3>
+        <p>Цена: $1299</p>
+        <button onclick="addToCart('iPhone 17 Pro Max', 1299)">Купить</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x250" alt="iPhone 17 Pro Max">
+        <h3>iPhone 17 Pro Max</h3>
+        <p>Цена: $1299</p>
+        <button onclick="addToCart('iPhone 17 Pro Max', 1299)">Купить</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x250" alt="iPhone 17 Pro Max">
+        <h3>iPhone 17 Pro Max</h3>
+        <p>Цена: $1299</p>
+        <button onclick="addToCart('iPhone 17 Pro Max', 1299)">Купить</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x250" alt="iPhone 17 Pro Max">
+        <h3>iPhone 17 Pro Max</h3>
+        <p>Цена: $1299</p>
+        <button onclick="addToCart('iPhone 17 Pro Max', 1299)">Купить</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Другие категории -->
+  <section id="iphone">
+    <h2>iPhone</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x250" alt="iPhone 16 Pro">
+        <h3>iPhone 16 Pro</h3>
+        <p>Цена: $1099</p>
+        <button onclick="addToCart('iPhone 16 Pro', 1099)">Купить</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="watch">
+    <h2>Apple Watch</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x250" alt="Apple Watch">
+        <h3>Apple Watch</h3>
+        <p>Цена: $499</p>
+        <button onclick="addToCart('Apple Watch', 499)">Купить</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="mac">
+    <h2>Mac</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x250" alt="MacBook">
+        <h3>MacBook Pro</h3>
+        <p>Цена: $1999</p>
+        <button onclick="addToCart('MacBook Pro', 1999)">Купить</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="airpods">
+    <h2>AirPods</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x250" alt="AirPods Pro">
+        <h3>AirPods Pro</h3>
+        <p>Цена: $299</p>
+        <button onclick="addToCart('AirPods Pro', 299)">Купить</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="accessories">
+    <h2>Аксессуары</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x250" alt="Чехол">
+        <h3>Чехол</h3>
+        <p>Цена: $49</p>
+        <button onclick="addToCart('Чехол', 49)">Купить</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Корзина -->
+  <div id="cart" class="cart hidden">
+    <h2>Корзина</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Итого: $0</p>
+    <button onclick="checkout()">Оплатить</button>
+    <button onclick="toggleCart()">Закрыть</button>
+  </div>
+
+  <!-- Подвал -->
+  <footer>
+    <p>© 2025 SmartStore. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
